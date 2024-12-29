@@ -48,7 +48,7 @@ export default function Hero () {
     <div id="vid-frame" className="relative z-10 h-dvh w-screen overflow-hidden bg-blue-75">
       <div>
         <video
-          src={"/src/assets/files/videoplayback.mp4"}
+          src={"/files/videoplayback.mp4"}
           autoPlay
           loop
           muted
