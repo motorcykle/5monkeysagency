@@ -34,7 +34,7 @@ export default function Clients() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "top 60%",
+          start: "40% bottom",
           toggleActions: "play none none none",
         },
       }
@@ -54,7 +54,7 @@ export default function Clients() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 w-full min-h-[50dvh] gap-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 w-full min-h-[50dvh] gap-4 py-12">
           {clientsLinks.map((client) => (
             <BentoTilt key={client}>
               <div className="relative size-full min-h-[4rem]">

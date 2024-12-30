@@ -13,7 +13,7 @@ export default function About() {
       const titleAnimation = gsap.timeline({
         scrollTrigger: {
           trigger: containerRef.current,
-          start: "-100 bottom",
+          start: "20% bottom",
           end: "center bottom",
           toggleActions: "play none none reverse",
         },
@@ -26,7 +26,7 @@ export default function About() {
           x: "100vw", // Start from 100% of the viewport width (off-screen to the right)
           y: "100vh", // Start from 100% of the viewport height (off-screen from the bottom)
           ease: "power2.inOut", // Smooth easing for entry
-          duration: 1.5, // Duration of animation
+          duration: 0.5, // Duration of animation
         },
         0
       );
@@ -39,7 +39,7 @@ export default function About() {
           x: "0", // End at the original horizontal position (center)
           y: "0", // End at the original vertical position (center)
           ease: "power2.inOut", // Smooth easing for reset
-          duration: 1.5, // Duration for final state
+          duration: 0.5, // Duration for final state
         },
         0
       );
@@ -69,14 +69,13 @@ export default function About() {
 
   return (
     <section className="min-h-screen w-screen relative">
-      <div className="py-24 px-2 flex flex-col items-center gap-5 max-w-4xl mx-auto text-center">
+      <div ref={containerRef} className="py-24 px-2 flex flex-col items-center gap-5 max-w-4xl mx-auto text-center">
         <p className="font-general text-sm uppercase md:text-[10px]">
           Welcome to 5monkeys
         </p>
 
         {/* Single Text Animation */}
         <div
-          ref={containerRef}
           className="animated-title flex items-center justify-center relative min-h-40 w-full text-center text-7xl uppercase leading-[.8] text-black sm:px-32 md:text-[6rem]"
         >
           <span className="animated-word special-font font-zentry font-black opacity-0 transform absolute top-0">
