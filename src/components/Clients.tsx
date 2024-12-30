@@ -22,7 +22,7 @@ export default function Clients() {
 
   useGSAP(() => {
     if (!containerRef.current) return;
-
+  
     gsap.fromTo(
       "#title p",
       { opacity: 0, y: 50 },
@@ -31,16 +31,16 @@ export default function Clients() {
         y: 0,
         duration: 1,
         stagger: 0.2,
-        ease: "power3.out",
+        ease: "power2.inOut",
         scrollTrigger: {
           trigger: containerRef.current,
           start: "40% bottom",
-          toggleActions: "play none none none",
+          toggleActions: "restart none none none", // Restart animation every time the trigger is re-entered
         },
       }
     );
-
   });
+  
 
   return (
     <section ref={containerRef} className="relative bg-black">
