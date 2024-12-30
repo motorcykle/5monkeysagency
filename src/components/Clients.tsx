@@ -5,13 +5,10 @@ import { useRef, useState, ReactNode, MouseEvent } from "react";
 
 // could create objects instead { img_src: string, website: string } but this is good
 const clientsLinks: string[] = [
-  "https://www.5monkeys.se/_app/assets/eqt.bb10e1d5.svg",
   "https://www.5monkeys.se/_app/assets/ginatricot.af215c48.svg",
   "https://www.5monkeys.se/_app/assets/obayaty.f16740fe.svg",
   "https://www.5monkeys.se/_app/assets/reasonstudios.17c01ff0.svg",
   "https://www.5monkeys.se/_app/assets/dn.b8d0cd89.svg",
-  "https://www.5monkeys.se/_app/assets/pressbyran.c6cc63ad.svg",
-  "https://www.5monkeys.se/_app/assets/xl-bygg.7c4dee8d.svg",
   "https://www.5monkeys.se/_app/assets/arkivet.8988184a.svg",
   "https://www.5monkeys.se/_app/assets/bolist.fafc50db.svg",
   "https://www.5monkeys.se/_app/assets/wallism.2cc238ff.svg",
@@ -63,7 +60,7 @@ export default function Clients() {
               <div className="relative size-full min-h-[4rem]">
                 <img
                   src={client}
-                  className="absolute left-0 top-0 size-full min-h-[4rem]  p-4 object-contain object-center cursor-pointer bg-zinc-500"
+                  className="absolute left-0 top-0 size-full min-h-[4rem] md:p-6 lg:p-8 p-3 object-contain object-center cursor-pointer"
                   alt="Client logo"
                 />
               </div>
@@ -105,7 +102,7 @@ function BentoTilt({ children }: BentoTiltProps) {
   return (
     <div
       ref={itemRef}
-      className=" overflow-hidden rounded-md transition-transform duration-300 ease-out bg-zinc-700"
+      className=" overflow-hidden rounded-md transition-transform duration-300 ease-out bg-blue-50"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       style={{ transform: transformStyle }}
