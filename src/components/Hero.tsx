@@ -52,7 +52,7 @@ export default function Hero () {
           autoPlay
           loop
           muted
-          className="absolute left-0 top-0 size-full object-cover scale-150 object-center"
+          className="absolute left-0 top-0 size-full object-cover scale-150 object-center pointer-events-none"
         />
       </div>
 
