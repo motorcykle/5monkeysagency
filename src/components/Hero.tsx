@@ -56,6 +56,8 @@ export default function Hero () {
         />
       </div>
 
+      <div className="absolute inset-0 z-10 pointer-events-auto"></div>
+
       {/* Hero Content */}
 
       <div className="absolute left-0 top-0 z-40 size-full">
