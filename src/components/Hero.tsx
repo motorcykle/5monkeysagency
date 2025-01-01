@@ -52,8 +52,10 @@ export default function Hero () {
           autoPlay
           loop
           muted
-          className="absolute left-0 top-0 size-full object-cover scale-150 object-center pointer-events-none"
+          className="absolute left-0 top-0 size-full object-cover scale-150 object-center pointer-events-none hidden md:inline-block"
         />
+
+        <img src="/img/monkeyking4_hires-1024x579.jpg" className="absolute left-0 top-0 size-full object-cover object-center pointer-events-none md:hidden" alt="" />
       </div>
 
       <div className="absolute inset-0 z-10 pointer-events-auto"></div>
